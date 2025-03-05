@@ -1,16 +1,8 @@
-interface Demo {
-    void work();
-}
-
-class Demo1 implements Demo {
-    public void work() {
-        System.out.println("Working");
-    }
-}
-
-public class main{  
+public class main {
     public static void main(String[] args) {
-        Demo1 de = new Demo1();  
-        de.work();  
+        calculator c = new calculator();
+        System.out.println("Addition: " + c.add(30, 50));
+        System.out.println("Subtraction: " + c.subtract(30, 50));
+        System.out.println("Multiplication: " + c.multiply(30, 50));
     }
 }
